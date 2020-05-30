@@ -1,0 +1,43 @@
+@media (min-width: 1280px) {
+  .header {
+    width: 50%;
+    .container {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+  .block {
+    width: 60%;
+    li:nth-child(1n + 2) {
+      font-size: 1.2rem;
+      padding-top: 1rem;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .header {
+    width: 90%;
+    .container {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+  .block {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    img {
+      width: 100%;
+      border: 4px solid white;
+    }
+    li {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid white;
+    }
+    li:nth-child(1n + 2) {
+      font-size: 1.2rem;
+      padding-top: 1rem;
+    }
+  }
+}

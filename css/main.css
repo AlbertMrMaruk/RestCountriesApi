@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Caladea", serif;
+  line-height: 1.7rem;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  height: 55rem;
+  background: linear-gradient(to bottom, #14142c 50%, white 50%);
+  padding-top: 18rem;
+}
+
+.header {
+  width: 70%;
+  margin: auto;
+  border-radius: 15px;
+  background: linear-gradient(to bottom right, #f85a5b, #fa6c7c, #e06aa9);
+  padding: 3rem 0;
+}
+
+.header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 2.5rem;
+}
+
+.header .container h1 {
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  line-height: 2.7rem;
+  font-size: 2rem;
+}
+
+.header .container input[type="text"] {
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+  width: 80%;
+  font-size: 1.1rem;
+  color: white;
+  border: 2px solid white;
+  background-color: inherit;
+  outline: none;
+}
+
+.header .container input[type="text"]::placeholder {
+  color: white;
+}
+
+.header .container input[type="submit"] {
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding: 1rem 6rem;
+  border: 1px solid white;
+  border-radius: 2px;
+  color: #2c3444;
+  background-color: white;
+  transition: all 400ms ease-in-out;
+  outline: none;
+}
+
+.header .container input[type="submit"]:hover {
+  background-color: #444444;
+  color: white;
+  border: 1px solid #444444;
+}
+
+.block {
+  width: 80%;
+  margin: 4rem auto;
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 15px;
+  padding: 1.5rem;
+  background: linear-gradient(to bottom right, #f85a5b, #fa6c7c, #e06aa9);
+  color: white;
+  text-align: center;
+}
+
+.block img {
+  width: 100%;
+  border: 4px solid white;
+}
+
+.block li {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid white;
+}
+
+.block li:nth-child(1n + 2) {
+  padding-top: 0.5rem;
+}
+
+@media (min-width: 1280px) {
+  .header {
+    width: 50%;
+  }
+  .header .container h1 {
+    font-size: 2rem;
+  }
+  .block {
+    width: 60%;
+  }
+  .block li:nth-child(1n + 2) {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    width: 90%;
+  }
+  .header .container h1 {
+    font-size: 2rem;
+  }
+  .block {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .block img {
+    width: 100%;
+    border: 4px solid white;
+  }
+  .block li {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+  }
+  .block li:nth-child(1n + 2) {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
